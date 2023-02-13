@@ -13,7 +13,7 @@ class Scene extends StatelessWidget {
     return Container(
       width: double.infinity,
       child: Container(
-        // profilenormal2U3 (1:316)
+        // profilenormalddm (1:316)
         width: double.infinity,
         height: 852*fem,
         decoration: BoxDecoration (
@@ -28,7 +28,7 @@ class Scene extends StatelessWidget {
         child: Stack(
           children: [
             Positioned(
-              // statusbar4fd (1:317)
+              // statusbar6Qs (1:317)
               left: 9*fem,
               top: 8*fem,
               child: Container(
@@ -45,7 +45,7 @@ class Scene extends StatelessWidget {
                       crossAxisAlignment: CrossAxisAlignment.center,
                       children: [
                         Container(
-                          // timeffR (I1:317;1:609)
+                          // timei4s (I1:317;1:609)
                           margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 232.5*fem, 0*fem),
                           child: Text(
                             '9:41',
@@ -61,34 +61,34 @@ class Scene extends StatelessWidget {
                           ),
                         ),
                         Container(
-                          // cellularconnectionj9V (I1:317;1:603)
+                          // cellularconnection65R (I1:317;1:603)
                           margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 5*fem, 1.67*fem),
                           width: 17*fem,
                           height: 10.67*fem,
                           child: Image.asset(
-                            'assets/page-1/images/cellular-connection-XUP.png',
+                            'assets/page-1/images/cellular-connection-7pf.png',
                             width: 17*fem,
                             height: 10.67*fem,
                           ),
                         ),
                         Container(
-                          // wifioQF (I1:317;1:599)
+                          // wifiXK9 (I1:317;1:599)
                           margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 5*fem, 2.01*fem),
                           width: 15.33*fem,
                           height: 11*fem,
                           child: Image.asset(
-                            'assets/page-1/images/wifi-xKu.png',
+                            'assets/page-1/images/wifi-a6o.png',
                             width: 15.33*fem,
                             height: 11*fem,
                           ),
                         ),
                         Container(
-                          // batteryVXy (I1:317;1:595)
+                          // batteryYzw (I1:317;1:595)
                           margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 0*fem, 1.67*fem),
                           width: 24.33*fem,
                           height: 11.33*fem,
                           child: Image.asset(
-                            'assets/page-1/images/battery-LCb.png',
+                            'assets/page-1/images/battery.png',
                             width: 24.33*fem,
                             height: 11.33*fem,
                           ),
@@ -100,7 +100,7 @@ class Scene extends StatelessWidget {
               ),
             ),
             Positioned(
-              // group18Au1 (1:319)
+              // group18Nj5 (1:319)
               left: 86.5*fem,
               top: 238*fem,
               child: Container(
@@ -110,18 +110,18 @@ class Scene extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
                     Container(
-                      // maskgroupF9m (I1:320;5:163)
+                      // maskgroupuMd (I1:320;5:163)
                       margin: EdgeInsets.fromLTRB(1*fem, 0*fem, 0*fem, 16.5*fem),
                       width: 150*fem,
                       height: 162*fem,
                       child: Image.asset(
-                        'assets/page-1/images/mask-group-Lr7.png',
+                        'assets/page-1/images/mask-group-qmm.png',
                         width: 150*fem,
                         height: 162*fem,
                       ),
                     ),
                     Center(
-                      // johndoeKfR (1:321)
+                      // johndoeWcK (1:321)
                       child: Container(
                         margin: EdgeInsets.fromLTRB(1*fem, 0*fem, 0*fem, 26.5*fem),
                         child: Text(
@@ -139,7 +139,7 @@ class Scene extends StatelessWidget {
                       ),
                     ),
                     Center(
-                      // johndoegmailcomyjy (1:322)
+                      // johndoegmailcomaVh (1:322)
                       child: Container(
                         margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 0*fem, 27*fem),
                         child: Text(
@@ -157,7 +157,7 @@ class Scene extends StatelessWidget {
                       ),
                     ),
                     Center(
-                      // 2iF (1:323)
+                      // hij (1:323)
                       child: Text(
                         '8282992369',
                         textAlign: TextAlign.center,
@@ -176,7 +176,7 @@ class Scene extends StatelessWidget {
               ),
             ),
             Positioned(
-              // materialsymbolsarrowbackLU3 (1:324)
+              // materialsymbolsarrowback9qd (1:324)
               left: 30*fem,
               top: 86*fem,
               child: Align(
@@ -184,7 +184,7 @@ class Scene extends StatelessWidget {
                   width: 27*fem,
                   height: 27*fem,
                   child: Image.asset(
-                    'assets/page-1/images/material-symbols-arrow-back.png',
+                    'assets/page-1/images/material-symbols-arrow-back-qjZ.png',
                     width: 27*fem,
                     height: 27*fem,
                   ),
@@ -192,7 +192,7 @@ class Scene extends StatelessWidget {
               ),
             ),
             Positioned(
-              // majesticonseditpen2oMd (1:326)
+              // majesticonseditpen2Vo1 (1:326)
               left: 325*fem,
               top: 86*fem,
               child: Align(
@@ -200,7 +200,7 @@ class Scene extends StatelessWidget {
                   width: 27*fem,
                   height: 27*fem,
                   child: Image.asset(
-                    'assets/page-1/images/majesticons-edit-pen-2-WvP.png',
+                    'assets/page-1/images/majesticons-edit-pen-2-Uuy.png',
                     width: 27*fem,
                     height: 27*fem,
                   ),
@@ -208,7 +208,7 @@ class Scene extends StatelessWidget {
               ),
             ),
             Positioned(
-              // autogroupbwstgAX (VjDtzZaszb6NDP2NjVbwST)
+              // autogroupidpx2Af (H9FCM3owMPy1r7Ke8SidpX)
               left: 281.375*fem,
               top: 88.716217041*fem,
               child: Container(
@@ -218,22 +218,30 @@ class Scene extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
                     Container(
-                      // materialsymbolslogoutxtj (1:329)
+                      // materialsymbolslogoutm1m (1:329)
                       margin: EdgeInsets.fromLTRB(0*fem, 0.66*fem, 26.75*fem, 0*fem),
-                      width: 20.25*fem,
-                      height: 20.25*fem,
-                      child: Image.asset(
-                        'assets/page-1/images/material-symbols-logout.png',
-                        width: 20.25*fem,
-                        height: 20.25*fem,
+                      child: TextButton(
+                        onPressed: () {},
+                        style: TextButton.styleFrom (
+                          padding: EdgeInsets.zero,
+                        ),
+                        child: Container(
+                          width: 20.25*fem,
+                          height: 20.25*fem,
+                          child: Image.asset(
+                            'assets/page-1/images/material-symbols-logout.png',
+                            width: 20.25*fem,
+                            height: 20.25*fem,
+                          ),
+                        ),
                       ),
                     ),
                     Container(
-                      // majesticonseditpen2Sou (1:328)
+                      // majesticonseditpen2w4f (1:328)
                       width: 20.91*fem,
                       height: 20.91*fem,
                       child: Image.asset(
-                        'assets/page-1/images/majesticons-edit-pen-2-PE3.png',
+                        'assets/page-1/images/majesticons-edit-pen-2-Dum.png',
                         width: 20.91*fem,
                         height: 20.91*fem,
                       ),
@@ -243,7 +251,7 @@ class Scene extends StatelessWidget {
               ),
             ),
             Positioned(
-              // mainbuttonsYrw (7:388)
+              // mainbuttonswTy (7:388)
               left: 126*fem,
               top: 769*fem,
               child: Container(
@@ -253,7 +261,7 @@ class Scene extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
                     Container(
-                      // group2SSX (I7:388;7:356)
+                      // group2KDd (I7:388;7:356)
                       margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 42*fem, 0*fem),
                       child: TextButton(
                         onPressed: () {},
@@ -264,7 +272,7 @@ class Scene extends StatelessWidget {
                           width: 44.3*fem,
                           height: 47*fem,
                           child: Image.asset(
-                            'assets/page-1/images/group-2-gqH.png',
+                            'assets/page-1/images/group-2-BuV.png',
                             width: 44.3*fem,
                             height: 47*fem,
                           ),
@@ -272,7 +280,7 @@ class Scene extends StatelessWidget {
                       ),
                     ),
                     Container(
-                      // group3hNT (I7:388;7:359)
+                      // group3gyH (I7:388;7:359)
                       margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 42*fem, 0*fem),
                       child: TextButton(
                         onPressed: () {},
@@ -283,7 +291,7 @@ class Scene extends StatelessWidget {
                           width: 44.3*fem,
                           height: 47*fem,
                           child: Image.asset(
-                            'assets/page-1/images/group-3-hkf.png',
+                            'assets/page-1/images/group-3-7VV.png',
                             width: 44.3*fem,
                             height: 47*fem,
                           ),
@@ -291,7 +299,7 @@ class Scene extends StatelessWidget {
                       ),
                     ),
                     TextButton(
-                      // mingcutetransfer3fillMT1 (I7:388;7:361)
+                      // mingcutetransfer3filld1M (I7:388;7:361)
                       onPressed: () {},
                       style: TextButton.styleFrom (
                         padding: EdgeInsets.zero,
@@ -300,7 +308,7 @@ class Scene extends StatelessWidget {
                         width: 44*fem,
                         height: 47*fem,
                         child: Image.asset(
-                          'assets/page-1/images/mingcute-transfer-3-fill-Sm1.png',
+                          'assets/page-1/images/mingcute-transfer-3-fill-XXZ.png',
                           width: 44*fem,
                           height: 47*fem,
                         ),

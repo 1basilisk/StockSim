@@ -13,7 +13,7 @@ class Scene extends StatelessWidget {
     return Container(
       width: double.infinity,
       child: Container(
-        // profileeditingrcT (1:592)
+        // profileeditingDfh (1:592)
         width: double.infinity,
         height: 852*fem,
         decoration: BoxDecoration (
@@ -28,7 +28,7 @@ class Scene extends StatelessWidget {
         child: Stack(
           children: [
             Positioned(
-              // statusbarFPh (1:593)
+              // statusbar6N7 (1:593)
               left: 9*fem,
               top: 8*fem,
               child: Container(
@@ -45,7 +45,7 @@ class Scene extends StatelessWidget {
                       crossAxisAlignment: CrossAxisAlignment.center,
                       children: [
                         Container(
-                          // timeewd (I1:593;1:609)
+                          // timeSD1 (I1:593;1:609)
                           margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 232.5*fem, 0*fem),
                           child: Text(
                             '9:41',
@@ -61,34 +61,34 @@ class Scene extends StatelessWidget {
                           ),
                         ),
                         Container(
-                          // cellularconnection7KR (I1:593;1:603)
+                          // cellularconnectionaCj (I1:593;1:603)
                           margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 5*fem, 1.67*fem),
                           width: 17*fem,
                           height: 10.67*fem,
                           child: Image.asset(
-                            'assets/page-1/images/cellular-connection-RYP.png',
+                            'assets/page-1/images/cellular-connection-NVR.png',
                             width: 17*fem,
                             height: 10.67*fem,
                           ),
                         ),
                         Container(
-                          // wifiBq5 (I1:593;1:599)
+                          // wifiKJj (I1:593;1:599)
                           margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 5*fem, 2.01*fem),
                           width: 15.33*fem,
                           height: 11*fem,
                           child: Image.asset(
-                            'assets/page-1/images/wifi-g9q.png',
+                            'assets/page-1/images/wifi-8u9.png',
                             width: 15.33*fem,
                             height: 11*fem,
                           ),
                         ),
                         Container(
-                          // batterytDh (I1:593;1:595)
+                          // batteryYBV (I1:593;1:595)
                           margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 0*fem, 1.67*fem),
                           width: 24.33*fem,
                           height: 11.33*fem,
                           child: Image.asset(
-                            'assets/page-1/images/battery-pRR.png',
+                            'assets/page-1/images/battery-Bxw.png',
                             width: 24.33*fem,
                             height: 11.33*fem,
                           ),
@@ -100,7 +100,7 @@ class Scene extends StatelessWidget {
               ),
             ),
             Positioned(
-              // materialsymbolsarrowbackacK (1:595)
+              // materialsymbolsarrowbackk2f (1:595)
               left: 34.5*fem,
               top: 90.5*fem,
               child: Align(
@@ -108,7 +108,7 @@ class Scene extends StatelessWidget {
                   width: 18*fem,
                   height: 18*fem,
                   child: Image.asset(
-                    'assets/page-1/images/material-symbols-arrow-back-8Gj.png',
+                    'assets/page-1/images/material-symbols-arrow-back.png',
                     width: 18*fem,
                     height: 18*fem,
                   ),
@@ -116,23 +116,29 @@ class Scene extends StatelessWidget {
               ),
             ),
             Positioned(
-              // materialsymbolscheckboxrpj (1:596)
+              // materialsymbolscheckboxof9 (1:596)
               left: 325*fem,
               top: 86*fem,
-              child: Align(
-                child: SizedBox(
-                  width: 27*fem,
-                  height: 27*fem,
-                  child: Image.asset(
-                    'assets/page-1/images/material-symbols-check-box-WJX.png',
-                    width: 27*fem,
-                    height: 27*fem,
+              child: Container(
+                padding: EdgeInsets.fromLTRB(3.38*fem, 3.38*fem, 3.38*fem, 3.38*fem),
+                width: 27*fem,
+                height: 27*fem,
+                child: Center(
+                  // vectorzDq (1:597)
+                  child: SizedBox(
+                    width: 20.25*fem,
+                    height: 20.25*fem,
+                    child: Image.asset(
+                      'assets/page-1/images/vector.png',
+                      width: 20.25*fem,
+                      height: 20.25*fem,
+                    ),
                   ),
                 ),
               ),
             ),
             Positioned(
-              // group17YBm (1:598)
+              // group176w5 (1:598)
               left: 57*fem,
               top: 426*fem,
               child: Container(
@@ -144,96 +150,93 @@ class Scene extends StatelessWidget {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
-                    TextButton(
-                      // textfieldchangecSX (1:599)
-                      onPressed: () {},
-                      style: TextButton.styleFrom (
-                        padding: EdgeInsets.zero,
+                    Container(
+                      // textfieldchange3E3 (1:599)
+                      width: double.infinity,
+                      decoration: BoxDecoration (
+                        borderRadius: BorderRadius.circular(19*fem),
+                        border: Border.all(color: Color(0xffffffff)),
                       ),
-                      child: Container(
-                        padding: EdgeInsets.fromLTRB(28*fem, 6.5*fem, 28*fem, 6.5*fem),
-                        width: double.infinity,
-                        decoration: BoxDecoration (
-                          border: Border.all(color: Color(0xffffffff)),
-                          borderRadius: BorderRadius.circular(19*fem),
+                      child: TextField(
+                        decoration: InputDecoration (
+                          border: InputBorder.none,
+                          focusedBorder: InputBorder.none,
+                          enabledBorder: InputBorder.none,
+                          errorBorder: InputBorder.none,
+                          disabledBorder: InputBorder.none,
+                          contentPadding: EdgeInsets.fromLTRB(28*fem, 6.5*fem, 28*fem, 6.5*fem),
+                          hintText: 'Name',
+                          hintStyle: TextStyle(color:Color(0xffffffff)),
                         ),
-                        child: Center(
-                          child: Text(
-                            'Name',
-                            textAlign: TextAlign.center,
-                            style: SafeGoogleFont (
-                              'Montserrat',
-                              fontSize: 16*ffem,
-                              fontWeight: FontWeight.w600,
-                              height: 1.6356666088*ffem/fem,
-                              letterSpacing: -0.3000000119*fem,
-                              color: Color(0xffffffff),
-                            ),
-                          ),
-                        ),
-                      ),
-                    ),
-                    SizedBox(
-                      height: 50*fem,
-                    ),
-                    TextButton(
-                      // textfieldchangeZWB (1:600)
-                      onPressed: () {},
-                      style: TextButton.styleFrom (
-                        padding: EdgeInsets.zero,
-                      ),
-                      child: Container(
-                        padding: EdgeInsets.fromLTRB(28*fem, 6.5*fem, 28*fem, 6.5*fem),
-                        width: double.infinity,
-                        decoration: BoxDecoration (
-                          border: Border.all(color: Color(0xffffffff)),
-                          borderRadius: BorderRadius.circular(19*fem),
-                        ),
-                        child: Center(
-                          child: Text(
-                            'Email',
-                            textAlign: TextAlign.center,
-                            style: SafeGoogleFont (
-                              'Montserrat',
-                              fontSize: 16*ffem,
-                              fontWeight: FontWeight.w600,
-                              height: 1.6356666088*ffem/fem,
-                              letterSpacing: -0.3000000119*fem,
-                              color: Color(0xffffffff),
-                            ),
-                          ),
+                        style: SafeGoogleFont (
+                          'Montserrat',
+                          fontSize: 16*ffem,
+                          fontWeight: FontWeight.w600,
+                          height: 1.6356666088*ffem/fem,
+                          letterSpacing: -0.3000000119*fem,
+                          color: Color(0xff000000),
                         ),
                       ),
                     ),
                     SizedBox(
                       height: 50*fem,
                     ),
-                    TextButton(
-                      // textfieldchangekqZ (1:601)
-                      onPressed: () {},
-                      style: TextButton.styleFrom (
-                        padding: EdgeInsets.zero,
+                    Container(
+                      // textfieldchangeALb (1:600)
+                      width: double.infinity,
+                      decoration: BoxDecoration (
+                        borderRadius: BorderRadius.circular(19*fem),
+                        border: Border.all(color: Color(0xffffffff)),
                       ),
-                      child: Container(
-                        padding: EdgeInsets.fromLTRB(28*fem, 6.5*fem, 28*fem, 6.5*fem),
-                        width: double.infinity,
-                        decoration: BoxDecoration (
-                          border: Border.all(color: Color(0xffffffff)),
-                          borderRadius: BorderRadius.circular(19*fem),
+                      child: TextField(
+                        decoration: InputDecoration (
+                          border: InputBorder.none,
+                          focusedBorder: InputBorder.none,
+                          enabledBorder: InputBorder.none,
+                          errorBorder: InputBorder.none,
+                          disabledBorder: InputBorder.none,
+                          contentPadding: EdgeInsets.fromLTRB(28*fem, 6.5*fem, 28*fem, 6.5*fem),
+                          hintText: 'Email',
+                          hintStyle: TextStyle(color:Color(0xffffffff)),
                         ),
-                        child: Center(
-                          child: Text(
-                            'Contact',
-                            textAlign: TextAlign.center,
-                            style: SafeGoogleFont (
-                              'Montserrat',
-                              fontSize: 16*ffem,
-                              fontWeight: FontWeight.w600,
-                              height: 1.6356666088*ffem/fem,
-                              letterSpacing: -0.3000000119*fem,
-                              color: Color(0xffffffff),
-                            ),
-                          ),
+                        style: SafeGoogleFont (
+                          'Montserrat',
+                          fontSize: 16*ffem,
+                          fontWeight: FontWeight.w600,
+                          height: 1.6356666088*ffem/fem,
+                          letterSpacing: -0.3000000119*fem,
+                          color: Color(0xff000000),
+                        ),
+                      ),
+                    ),
+                    SizedBox(
+                      height: 50*fem,
+                    ),
+                    Container(
+                      // textfieldchangeRQw (1:601)
+                      width: double.infinity,
+                      decoration: BoxDecoration (
+                        borderRadius: BorderRadius.circular(19*fem),
+                        border: Border.all(color: Color(0xffffffff)),
+                      ),
+                      child: TextField(
+                        decoration: InputDecoration (
+                          border: InputBorder.none,
+                          focusedBorder: InputBorder.none,
+                          enabledBorder: InputBorder.none,
+                          errorBorder: InputBorder.none,
+                          disabledBorder: InputBorder.none,
+                          contentPadding: EdgeInsets.fromLTRB(28*fem, 6.5*fem, 28*fem, 6.5*fem),
+                          hintText: 'Contact',
+                          hintStyle: TextStyle(color:Color(0xffffffff)),
+                        ),
+                        style: SafeGoogleFont (
+                          'Montserrat',
+                          fontSize: 16*ffem,
+                          fontWeight: FontWeight.w600,
+                          height: 1.6356666088*ffem/fem,
+                          letterSpacing: -0.3000000119*fem,
+                          color: Color(0xff000000),
                         ),
                       ),
                     ),
@@ -242,7 +245,7 @@ class Scene extends StatelessWidget {
               ),
             ),
             Positioned(
-              // displaypictureeditnXM (1:602)
+              // displaypictureeditAfM (1:602)
               left: 122*fem,
               top: 195*fem,
               child: TextButton(
@@ -254,14 +257,20 @@ class Scene extends StatelessWidget {
                   width: 150*fem,
                   height: 162*fem,
                   child: Center(
-                    // maskgroupFvj (I1:602;34:355;3:102)
+                    // maskgroupV5M (I1:602;34:355;3:102)
                     child: SizedBox(
                       width: 150*fem,
                       height: 162*fem,
-                      child: Image.asset(
-                        'assets/page-1/images/mask-group-iEP.png',
-                        width: 150*fem,
-                        height: 162*fem,
+                      child: Container(
+                        child: TextField(
+                          decoration: InputDecoration (
+                            border: InputBorder.none,
+                            focusedBorder: InputBorder.none,
+                            enabledBorder: InputBorder.none,
+                            errorBorder: InputBorder.none,
+                            disabledBorder: InputBorder.none,
+                          ),
+                        ),
                       ),
                     ),
                   ),

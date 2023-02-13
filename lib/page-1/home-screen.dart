@@ -4,7 +4,7 @@ import 'dart:ui';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:myapp/utils.dart';
 
-class Scene extends StatelessWidget {
+class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     double baseWidth = 393;
@@ -320,14 +320,18 @@ class Scene extends StatelessWidget {
                       ],
                     ),
                   ),
+
+                  
+                  //Here I do changes
                   Container(
                     // frame292K (1:152)
                     margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 0*fem, 5.5*fem),
                     padding: EdgeInsets.fromLTRB(0*fem, 20*fem, 0*fem, 0*fem),
                     width: double.infinity,
                     height: 194.14*fem,
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.center,
+                    child: ListView(
+                      scrollDirection: Axis.vertical,
+                      
                       children: [
                         Container(
                           // s1bQ7 (1:153)
@@ -1525,13 +1529,15 @@ class Scene extends StatelessWidget {
                 ],
               ),
             ),
+
+            //Articles Container
             Container(
               // frame249AT (1:253)
               margin: EdgeInsets.fromLTRB(1*fem, 0*fem, 0*fem, 76*fem),
               padding: EdgeInsets.fromLTRB(10*fem, 0*fem, 0*fem, 0*fem),
               height: 115*fem,
-              child: Row(
-                crossAxisAlignment: CrossAxisAlignment.center,
+              child: ListView(
+                scrollDirection: Axis.horizontal,
                 children: [
                   Container(
                     // group19RNs (1:254)
@@ -1673,6 +1679,7 @@ class Scene extends StatelessWidget {
                 ],
               ),
             ),
+           //Main Buttons Container
             Container(
               // mainbuttonsYXM (7:399)
               margin: EdgeInsets.fromLTRB(93*fem, 0*fem, 74.4*fem, 0*fem),
@@ -1732,6 +1739,9 @@ class Scene extends StatelessWidget {
               ),
             ),
           ],
+
+
+          //Till here
         ),
       ),
           );
