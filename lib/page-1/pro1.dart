@@ -73,7 +73,7 @@ Container(
   height:  10.67*fem,
   child:  
 Image.network(
-  [Image url]
+  [Image url],
   width:  17*fem,
   height:  10.67*fem,
 ),
