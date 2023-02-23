@@ -3,6 +3,7 @@ import 'package:stockez_app/screens/login_page.dart';
 
 import 'screens/createacc_page.dart';
 // main function
+//pfjvkrtesfehfbjhrvjsvbdsdsbvbsvfbhsdvckhsdbcksdvkhsdbvkdsbksbdk
 void main() {
   runApp(const MyApp());
 }
