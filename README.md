@@ -1,4 +1,4 @@
-# test
+# stockez_app
 
 A new Flutter project.
 

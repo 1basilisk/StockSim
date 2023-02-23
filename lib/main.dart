@@ -1,34 +1,41 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/gestures.dart';
-import 'dart:ui';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:myapp/utils.dart';
-import 'package:myapp/page-1/login-.dart';
-import 'package:myapp/page-1/loading-screen-.dart';
-import 'package:myapp/page-1/loading.dart';
-import 'package:myapp/page-1/profile-normal.dart';
-import 'package:myapp/page-1/edit-wishlist.dart';
-import 'package:myapp/page-1/profile-editing.dart';
-import 'package:myapp/page-1/home-screen.dart';
-import 'package:myapp/page-1/main-buttons.dart';
+import 'package:stockez_app/screens/login_page.dart';
 
-void main() => runApp(MyApp());
+import 'screens/createacc_page.dart';
+
+void main() {
+  runApp(const MyApp());
+}
 
 class MyApp extends StatelessWidget {
-	@override
-	Widget build(BuildContext context) {
-	return MaterialApp(
-		title: 'Flutter',
-		debugShowCheckedModeBanner: false,
-		scrollBehavior: MyCustomScrollBehavior(),
-		theme: ThemeData(
-		primarySwatch: Colors.blue,
-		),
-		home: Scaffold(
-		body: SingleChildScrollView(
-			child: LoginScene(),
-		),
-		),
-	);
-	}
+  const MyApp({super.key});
+
+  // This widget is the root of your application.
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      title: 'Flutter Demo',
+      theme: ThemeData(
+        primarySwatch: Colors.green,
+      ),
+ home: const LoginPage(),
+    );
+  }
+}
+
+class MyHomePage extends StatefulWidget {
+  const MyHomePage({super.key, required this.title});
+
+  final String title;
+
+  @override
+  State<MyHomePage> createState() => _MyHomePageState();
+}
+
+class _MyHomePageState extends State<MyHomePage> {
+  @override
+  Widget build(BuildContext context) {
+    return const LoginPage();
+  }
 }
