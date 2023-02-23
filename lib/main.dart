@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:stockez_app/screens/login_page.dart';
 
 import 'screens/createacc_page.dart';
-
+// main function
 void main() {
   runApp(const MyApp());
 }
