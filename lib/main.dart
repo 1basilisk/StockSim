@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:stockez_app/screens/login_page.dart';
 
+import 'screens/buy_page.dart';
 import 'screens/createacc_page.dart';
+import 'screens/sell_page.dart';
+import 'screens/yourAcc_page.dart';
 // main function
 //pfjvkrtesfehfbjhrvjsvbdsdsbvbsvfbhsdvckhsdbcksdvkhsdbvkdsbksbdk
 void main() {
@@ -20,7 +23,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.green,
       ),
- home: const LoginPage(),
+ home: const SellPage(),
     );
   }
 }
@@ -37,6 +40,6 @@ class MyHomePage extends StatefulWidget {
 class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
-    return const LoginPage();
+    return const SellPage();
   }
 }
