@@ -3,6 +3,10 @@ import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 
+import 'home_page.dart';
+import 'records_page.dart';
+import 'search_page.dart';
+
 class YourAccountPage extends StatefulWidget {
   const YourAccountPage({super.key});
 
@@ -16,8 +20,8 @@ class _YourAccountPageState extends State<YourAccountPage> {
     return Scaffold(
       //BottomNavBar
       bottomNavigationBar: CurvedNavigationBar(
-          backgroundColor: Colors.deepPurple,
-          color: Colors.purple.shade200,
+          backgroundColor: Colors.white,
+          color: Colors.deepPurple,
           animationDuration: const Duration(milliseconds: 300),
           items: <Widget>[
             Icon(
@@ -36,14 +40,38 @@ class _YourAccountPageState extends State<YourAccountPage> {
               size: 50,
             ),
             Icon(
-              Icons.home,
+              Icons.person,
               color: Colors.white,
               size: 50,
             ),
           ],
           onTap: (index) {
             print(index);
-          }),
+
+            if (index==0){
+              Navigator.of(context).push(MaterialPageRoute(builder: (context)=>HomePage()));
+            }
+            else if(index==1){
+              Navigator.of(context).push(MaterialPageRoute(builder: (context)=>SearchPage()));
+            }
+            else if(index==2){
+               Navigator.of(context).push(MaterialPageRoute(builder: (context)=>RecordsPage()));
+            }
+            else {
+              Navigator.of(context).push(MaterialPageRoute(builder: (context)=>YourAccountPage()));
+            }
+          }
+          ),
+      
+      appBar: AppBar(
+        title: const Text('Account Details'),
+        actions: [
+          IconButton(
+            onPressed: () {},
+            icon: Icon(Icons.star), //star==app logo
+          ),
+        ],
+      ),
 
       body: Container(
         child: Center(
@@ -52,14 +80,10 @@ class _YourAccountPageState extends State<YourAccountPage> {
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
 
-              Container(
-                child: Text("Your Account Details",
-                          style: TextStyle(fontSize: 50),
-                ),
-              ),
+              
               Container(
 
-                child: const Icon(Icons.account_circle, size: 50),
+                child: const Icon(Icons.account_circle, size: 90),
               ),
               Column(
                 mainAxisAlignment: MainAxisAlignment.center,

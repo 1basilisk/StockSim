@@ -2,12 +2,26 @@ import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/material.dart';
 
+import 'createacc_page.dart';
+import 'home_page.dart';
+
 class LoginPage extends StatelessWidget {
   const LoginPage({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+
+      appBar: AppBar(
+        title: const Text('Login'),
+        actions: [
+          IconButton(
+            onPressed: () {},
+            icon: Icon(Icons.star), //star==app logo
+          ),
+        ],
+      ),
+
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
@@ -39,7 +53,10 @@ class LoginPage extends StatelessWidget {
             )),
             Container(
               child: ElevatedButton(
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.of(context)
+                  .push(MaterialPageRoute(builder: (context) => HomePage()));
+                },
                 style: ElevatedButton.styleFrom(
                   backgroundColor: Colors.blue,
                 ),
@@ -54,7 +71,10 @@ class LoginPage extends StatelessWidget {
             ),
             Container(
               child: ElevatedButton(
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.of(context)
+                  .push(MaterialPageRoute(builder: (context) => CreateaccPage()));
+                },
                 style: ElevatedButton.styleFrom(
                   backgroundColor: Colors.green,
                 ),
