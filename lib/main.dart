@@ -1,9 +1,20 @@
 import 'package:flutter/material.dart';
 import 'package:stockez_app/screens/login_page.dart';
 
+import 'screens/buy_page.dart';
 import 'screens/createacc_page.dart';
+import 'screens/home_page.dart';
+import 'screens/portfolio_page.dart';
+import 'screens/records_page.dart';
+import 'screens/search_page.dart';
+import 'screens/sell_page.dart';
+import 'screens/yourAcc_page.dart';
+
+
+
+
 // main function
-//pfjvkrtesfehfbjhrvjsvbdsdsbvbsvfbhsdvckhsdbcksdvkhsdbvkdsbksbdk
+
 void main() {
   runApp(const MyApp());
 }
@@ -20,7 +31,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.green,
       ),
- home: const LoginPage(),
+ home:  const LoginPage(),
     );
   }
 }

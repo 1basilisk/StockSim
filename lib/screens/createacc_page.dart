@@ -8,12 +8,22 @@ class CreateaccPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+
+      appBar: AppBar(
+        title: const Text('Create Account'),
+        actions: [
+          IconButton(
+            onPressed: () {},
+            icon: Icon(Icons.star), //star==app logo
+          ),
+        ],
+      ),
       body: Container(
         child: Center(
           child: Column(
             children: <Widget>[
               Container(
-                child: Text("Create Account"),
+                child: Text("Register on StockEz to make investing easier tha ever!"),
               ),
               SizedBox(
                 height: 50,
@@ -51,6 +61,22 @@ class CreateaccPage extends StatelessWidget {
                     focusedBorder: OutlineInputBorder(
                         borderSide:
                             BorderSide(color: Colors.blue, width: 2.0))),
+              ),
+
+               Container(
+                child: ElevatedButton(
+                  onPressed: () {},
+                  style: ElevatedButton.styleFrom(
+                    backgroundColor: Colors.green,
+                  ),
+                  child: const Text(
+                    "Create Account",
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 30,
+                    ),
+                  ),
+                ),
               ),
             ],
           ),
