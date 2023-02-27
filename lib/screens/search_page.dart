@@ -1,8 +1,12 @@
+// ignore_for_file: prefer_const_constructors, avoid_print, avoid_unnecessary_containers, unnecessary_import, implementation_imports, unused_import
+
 import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/src/widgets/placeholder.dart';
+import 'package:stockez_app/services/api_service.dart';
 
+import '../model/stock_model.dart';
 import 'home_page.dart';
 import 'portfolio_page.dart';
 import 'records_page.dart';
@@ -16,15 +20,24 @@ class SearchPage extends StatefulWidget {
 }
 
 class _SearchPageState extends State<SearchPage> {
+  String sym = "fb";
+  bool click = false;
+  Future<Stock> search(String sym) {
+    Future<Stock> stock = fetchStock(sym);
+    setState(() {
+      stock = stock;
+    });
+    return stock;
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-
       bottomNavigationBar: CurvedNavigationBar(
           backgroundColor: Colors.white,
           color: Colors.deepPurple,
           animationDuration: const Duration(milliseconds: 300),
-          items: <Widget>[
+          items: const <Widget>[
             Icon(
               Icons.home,
               color: Colors.white,
@@ -48,20 +61,20 @@ class _SearchPageState extends State<SearchPage> {
           ],
           onTap: (index) {
             print(index);
-            if (index==0){
-              Navigator.of(context).push(MaterialPageRoute(builder: (context)=>HomePage()));
-            }
-            else if(index==1){
-              Navigator.of(context).push(MaterialPageRoute(builder: (context)=>SearchPage()));
-            }
-            else if(index==2){
-               Navigator.of(context).push(MaterialPageRoute(builder: (context)=>RecordsPage()));
-            }
-            else {
-              Navigator.of(context).push(MaterialPageRoute(builder: (context)=>PortfolioPage()));
+            if (index == 0) {
+              Navigator.of(context)
+                  .push(MaterialPageRoute(builder: (context) => HomePage()));
+            } else if (index == 1) {
+              Navigator.of(context)
+                  .push(MaterialPageRoute(builder: (context) => SearchPage()));
+            } else if (index == 2) {
+              Navigator.of(context)
+                  .push(MaterialPageRoute(builder: (context) => RecordsPage()));
+            } else {
+              Navigator.of(context).push(
+                  MaterialPageRoute(builder: (context) => PortfolioPage()));
             }
           }),
-          
       appBar: AppBar(
         title: const Text('Search Stock on one click!'),
         actions: [
@@ -78,7 +91,6 @@ class _SearchPageState extends State<SearchPage> {
               SizedBox(
                 width: 500,
                 child: TextFormField(
-                 
                   decoration: const InputDecoration(
                       suffixIcon: Padding(
                         padding: EdgeInsets.all(0.0),
@@ -92,31 +104,47 @@ class _SearchPageState extends State<SearchPage> {
                       focusedBorder: OutlineInputBorder(
                           borderSide:
                               BorderSide(color: Colors.blue, width: 2.0))),
+                  onChanged: (value) {
+                    setState(() {
+                      sym = value;
+                    });
+                  },
                 ),
               ),
-
-              SizedBox(
-                child: ElevatedButton(
-                  onPressed: () {},
-                  style: ElevatedButton.styleFrom(
-                    backgroundColor: Colors.green,
-                  ),
-                  child: const Text(
-                    "Search",
-                    style: TextStyle(
-                      color: Colors.white,
-                      fontSize: 30,
-                    ),
-                  ),
-                ),
-              ),
-
-              Container(
-                width: 500,
-                height: 300,
-                color: Colors.blueGrey,
-
-              ),
+              // SizedBox(
+              //   child: ElevatedButton(
+              //     onPressed: () {
+              //     },
+              //     style: ElevatedButton.styleFrom(
+              //       backgroundColor: Colors.green,
+              //     ),
+              //     child: const Text(
+              //       "Search",
+              //       style: TextStyle(
+              //         color: Colors.white,
+              //         fontSize: 30,
+              //       ),
+              //     ),
+              //   ),
+              // ),
+              FutureBuilder<Stock>(
+                future: fetchStock(sym), // Use any user ID you want
+                builder: (context, snapshot) {
+                  if (snapshot.hasData) {
+                    Stock stock = snapshot.data!;
+                    return Column(
+                      children: [
+                        Text(stock.name),
+                        Text(stock.symbol),
+                        Text(stock.price.toString()),
+                      ],
+                    );
+                  } else if (snapshot.hasError) {
+                    return Text('Error');
+                  }
+                  return CircularProgressIndicator();
+                },
+              )
             ],
           ),
         ),
