@@ -22,16 +22,16 @@ Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp(
       options: const FirebaseOptions(
-    apiKey: "AIzaSyB2L-Dpos5dq76W3f3mvaAW6h2150MMZww",
-    appId: "1:558882780198:android:0c903233ae1154915262e7",
-    projectId: "studentdetails-b8ec3",
-    authDomain: "studentdetails-b8ec3.firebaseapp.com",
-    messagingSenderId: "558882780198",
-    databaseURL: "https://studentdetails-b8ec3-default-rtdb.firebaseio.com",
+    apiKey: "AIzaSyD-1urHXpMJbdmCdPOGWOgn-bAAKiQYoZw",
+    appId: "1:572583760553:android:47748c6fa78c0a08e3cfb8",
+    projectId: "authgit-c59d7",
+    authDomain: "authgit-c59d7.firebaseapp.com",
+    messagingSenderId: "572583760553",
+    databaseURL: "https://authgit-c59d7-default-rtdb.firebaseio.com/",
   ));
-
-  runApp(const MyApp());
+  runApp(MyApp());
 }
+
 
 class MyApp extends StatefulWidget {
   const MyApp({super.key});
@@ -62,6 +62,26 @@ class _MyAppState extends State<MyApp> {
     this.sGpa = double.parse(stud_gpa);
   }
 
+  readData(String user) {
+    print("read");
+
+    DocumentReference databaseReference =
+        FirebaseFirestore.instance.collection("MyStudents").doc(user);
+
+    databaseReference.get().then((dataSnapshot) {
+      print(dataSnapshot.data());
+    });
+
+/*
+    databaseReference.collection("MyStudents").doc(sName).get().then(
+      (DocumentSnapshot doc) {
+        final data = doc.data() as Map<String, dynamic>;
+      },
+      onError: (e) => print("Error getting document: $e"),
+    );
+    */
+  }
+
   createData() async {
     print("created");
 
@@ -81,7 +101,7 @@ class _MyAppState extends State<MyApp> {
     });
   }
 
-  readData() {
+  readDatta() {
     print("read");
 
     DocumentReference databaseReference =
@@ -231,7 +251,7 @@ class _MyAppState extends State<MyApp> {
                     width: 120,
                     child: ElevatedButton(
                       onPressed: () {
-                        readData();
+                        readData("");
                       },
                       style: ElevatedButton.styleFrom(
                         backgroundColor: Colors.blue,

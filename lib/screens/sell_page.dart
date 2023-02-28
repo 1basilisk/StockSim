@@ -3,6 +3,8 @@ import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/src/widgets/placeholder.dart';
 import 'package:dropdown_formfield/dropdown_formfield.dart';
 import 'package:curved_navigation_bar/curved_navigation_bar.dart';
+import 'package:stockez_app/keys/variables.dart';
+import 'package:stockez_app/services/firebaseFunctions.dart';
 
 import '../services/api_service2.dart';
 import 'home_page.dart';
@@ -217,11 +219,15 @@ class _SellPageState extends State<SellPage> {
     double price = stockJson["previousClose"];
     double cost = num * price;
     String name = stockJson["companyName"];
+    String symbol = stockJson["symbol"];
     print("Name: $name");
     print("Price: $price");
     print("Cost: $cost");
 
+    UInfo.u_balance = (UInfo.u_balance! + cost);
     //update stocks in db
+    FirestoreServices.savePortfolio(symbol, name, num);
+    FirestoreServices.saveHistory("Sell", UInfo.u_Id, symbol, name, cost, num);
     //deduct money
     //redirect
   }

@@ -1,7 +1,10 @@
+// ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
+
 import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/src/widgets/placeholder.dart';
+import 'package:stockez_app/keys/variables.dart';
 
 import 'buy_page.dart';
 import 'portfolio_page.dart';
@@ -103,7 +106,7 @@ class _HomePageState extends State<HomePage> {
                     Text("Balance"),
                     Row(
                       children: <Widget>[
-                        Text("\$"),
+                        Text(UInfo.u_balance.toString()),
                         SizedBox(
                           width: 200,
                           child: TextFormField(

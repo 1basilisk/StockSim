@@ -1,5 +1,6 @@
 // ignore_for_file: prefer_const_constructors, avoid_print, avoid_unnecessary_containers, unnecessary_import, implementation_imports, unused_import
 
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/src/widgets/placeholder.dart';
@@ -12,6 +13,8 @@ import 'home_page.dart';
 import 'records_page.dart';
 import 'search_page.dart';
 import 'yourAcc_page.dart';
+import '../services/firebaseFunctions.dart';
+import '../keys/variables.dart';
 
 class BuyPage extends StatefulWidget {
   const BuyPage({super.key});
@@ -184,12 +187,32 @@ class _BuyPageState extends State<BuyPage> {
     Future<Map<String, dynamic>> futurestockJson = getStockJson(sym);
     Map<String, dynamic> stockJson = await futurestockJson;
     double price = stockJson["previousClose"];
+    String symbol = stockJson["symbol"];
     double cost = num * price;
     String name = stockJson["companyName"];
     print("Name: $name");
     print("Price: $price");
     print("Cost: $cost");
+    if (cost.toDouble() > UInfo.u_balance!) {
+      print("Not enough money");
+    } else {
+      setState(() {
+        UInfo.u_balance = (UInfo.u_balance! - cost);
+      });
+      print(UInfo.u_balance.toString());
+      FirestoreServices.saveHistory(
+        "Buy",
+        UInfo.u_Id, symbol, name, cost, num
+      );
+      FirestoreServices.savePortfolio(symbol, name, num);
+    }
+
+    // UInfo.u_portfolio = FirestoreServices.fetchPortfolio(UInfo.u_Id);
+    // UInfo.u_portfolio?.forEach((element) {
+    //   print(element.entries);
+    // });
     // ignore: use_build_context_synchronously
+
     Navigator.of(context)
         .push(MaterialPageRoute(builder: (context) => RecordsPage()));
 
